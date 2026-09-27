@@ -1014,26 +1014,38 @@ color:#c4b395
 }
 
 /* =========================
-   RSVP
+   WISHES & GREETINGS
 ========================= */
 
-.rsvp{
-background:radial-gradient(circle at 50% 0,#8d672d18,transparent 50%),#0d0905;
-text-align:center
+.wishes{
+background:radial-gradient(circle at 50% 0,#d7b46a14,transparent 50%),#0c0805;
 }
 
-.rsvp p{
+.wishes p{
 max-width:650px;
 margin:20px auto;
 color:#b8aa94;
 font-size:13px;
-line-height:1.9
+line-height:1.9;
+text-align:center;
 }
 
-.rsvpForm{
+.wishesForm{
 max-width:600px;
 margin:40px auto 0;
-text-align:left
+text-align:left;
+background:linear-gradient(145deg,#171006,#0b0805);
+border:1px solid #c9a75e55;
+padding:30px;
+position:relative;
+}
+
+.wishesForm:before{
+content:"";
+position:absolute;
+inset:7px;
+border:1px solid #d7b46a22;
+pointer-events:none;
 }
 
 .formGroup{
@@ -1070,138 +1082,6 @@ box-shadow:0 0 20px #d7b46a18
 .formGroup select option{
 background:#100b07;
 color:#f1dfaa
-}
-
-.attendance{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:10px
-}
-
-.attendanceOption{
-position:relative;
-margin:0!important;
-cursor:pointer
-}
-
-.attendanceOption input{
-position:absolute;
-opacity:0
-}
-
-.attendanceOption span{
-display:block;
-padding:15px 10px;
-text-align:center;
-border:1px solid #c9a75e44;
-background:#100b07;
-color:#b8aa94;
-font-size:10px;
-letter-spacing:1px;
-transition:.3s
-}
-
-.attendanceOption input:checked + span{
-border-color:#d7b46a;
-color:#f0d692;
-background:#1a1208;
-box-shadow:0 0 20px #d7b46a12
-}
-
-.contactChoice{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px
-}
-
-.contactBtn{
-padding:16px;
-border:1px solid #c9a75e44;
-background:#100b07;
-color:#b8aa94;
-cursor:pointer;
-transition:.35s
-}
-
-.contactBtn span{
-display:block;
-font-family:"Cormorant Garamond",serif;
-font-size:25px;
-color:#d8c184
-}
-
-.contactBtn small{
-display:block;
-margin-top:4px;
-font-size:9px;
-letter-spacing:1px
-}
-
-.contactBtn.active{
-border-color:#d7b46a;
-background:#1a1208;
-box-shadow:0 0 25px #d7b46a18
-}
-
-.submitRSVP{
-width:100%;
-margin-top:10px;
-padding:17px;
-border:1px solid #d7b46a;
-background:#d7b46a;
-color:#160e05;
-font-size:10px;
-letter-spacing:3px;
-cursor:pointer;
-transition:.35s
-}
-
-.submitRSVP:hover{
-background:#f0d692;
-box-shadow:0 0 30px #d7b46a44
-}
-
-.rsvpError{
-margin-top:15px;
-text-align:center;
-font-size:10px;
-color:#d9b875;
-min-height:16px
-}
-
-/* =========================
-   WISHES & GREETINGS
-========================= */
-
-.wishes{
-background:radial-gradient(circle at 50% 0,#d7b46a14,transparent 50%),#0c0805;
-}
-
-.wishes p{
-max-width:650px;
-margin:20px auto;
-color:#b8aa94;
-font-size:13px;
-line-height:1.9;
-text-align:center;
-}
-
-.wishesForm{
-max-width:600px;
-margin:40px auto 0;
-text-align:left;
-background:linear-gradient(145deg,#171006,#0b0805);
-border:1px solid #c9a75e55;
-padding:30px;
-position:relative;
-}
-
-.wishesForm:before{
-content:"";
-position:absolute;
-inset:7px;
-border:1px solid #d7b46a22;
-pointer-events:none;
 }
 
 .textarea-group textarea{
@@ -1442,6 +1322,126 @@ width:70%;
 height:1px;
 margin:30px auto 25px;
 background:linear-gradient(90deg,transparent,#d7b46a66,transparent)
+}
+
+/* =========================
+   RSVP
+========================= */
+
+.rsvp{
+background:radial-gradient(circle at 50% 0,#8d672d18,transparent 50%),#0d0905;
+text-align:center
+}
+
+.rsvp p{
+max-width:650px;
+margin:20px auto;
+color:#b8aa94;
+font-size:13px;
+line-height:1.9
+}
+
+.rsvpForm{
+max-width:600px;
+margin:40px auto 0;
+text-align:left
+}
+
+.attendance{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px
+}
+
+.attendanceOption{
+position:relative;
+margin:0!important;
+cursor:pointer
+}
+
+.attendanceOption input{
+position:absolute;
+opacity:0
+}
+
+.attendanceOption span{
+display:block;
+padding:15px 10px;
+text-align:center;
+border:1px solid #c9a75e44;
+background:#100b07;
+color:#b8aa94;
+font-size:10px;
+letter-spacing:1px;
+transition:.3s
+}
+
+.attendanceOption input:checked + span{
+border-color:#d7b46a;
+color:#f0d692;
+background:#1a1208;
+box-shadow:0 0 20px #d7b46a12
+}
+
+.contactChoice{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px
+}
+
+.contactBtn{
+padding:16px;
+border:1px solid #c9a75e44;
+background:#100b07;
+color:#b8aa94;
+cursor:pointer;
+transition:.35s
+}
+
+.contactBtn span{
+display:block;
+font-family:"Cormorant Garamond",serif;
+font-size:25px;
+color:#d8c184
+}
+
+.contactBtn small{
+display:block;
+margin-top:4px;
+font-size:9px;
+letter-spacing:1px
+}
+
+.contactBtn.active{
+border-color:#d7b46a;
+background:#1a1208;
+box-shadow:0 0 25px #d7b46a18
+}
+
+.submitRSVP{
+width:100%;
+margin-top:10px;
+padding:17px;
+border:1px solid #d7b46a;
+background:#d7b46a;
+color:#160e05;
+font-size:10px;
+letter-spacing:3px;
+cursor:pointer;
+transition:.35s
+}
+
+.submitRSVP:hover{
+background:#f0d692;
+box-shadow:0 0 30px #d7b46a44
+}
+
+.rsvpError{
+margin-top:15px;
+text-align:center;
+font-size:10px;
+color:#d9b875;
+min-height:16px
 }
 
 /* =========================
@@ -2198,7 +2198,7 @@ HADI & RIYA
 </section>
 
 <!-- =========================
-     WISHES & GREETINGS
+     WISHES & GREETINGS (UCAPAN DI HALAMAN)
 ========================= -->
 
 <section class="section wishes">
@@ -2214,7 +2214,7 @@ Ucapan & Doa Restu
 </h2>
 <div class="goldLine"></div>
 <p>
-Tuliskan ucapan, harapan, atau doa restu terbaik Anda untuk kedua mempelai.
+Tuliskan ucapan, harapan, atau doa restu terbaik Anda untuk kedua mempelai yang akan langsung tampil di halaman ini.
 </p>
 </div>
 
@@ -2347,7 +2347,7 @@ SALIN NOMOR REKENING
 </section>
 
 <!-- =========================
-     RSVP
+     RSVP (KONFIRMASI KEHADIRAN VIA WHATSAPP)
 ========================= -->
 
 <section class="section rsvp">
@@ -2365,149 +2365,56 @@ Konfirmasi Kehadiran
 <div class="goldLine"></div>
 
 <p>
-Mohon konfirmasi kehadiran Anda untuk membantu kami mempersiapkan hari istimewa ini dengan sebaik-baiknya.
+Mohon konfirmasi kehadiran Anda melalui WhatsApp untuk membantu kami mempersiapkan hari istimewa ini dengan sebaik-baiknya.
 </p>
 
 <div class="rsvpForm">
 
 <div class="formGroup">
-
-<label for="guestName">
-Nama Anda
-</label>
-
-<input
-type="text"
-id="guestName"
-placeholder="Masukkan nama lengkap"
->
-
+<label for="guestName">Nama Anda</label>
+<input type="text" id="guestName" placeholder="Masukkan nama lengkap">
 </div>
 
 <div class="formGroup">
-
-<label for="guestCount">
-Jumlah Tamu
-</label>
-
+<label for="guestCount">Jumlah Tamu</label>
 <select id="guestCount">
-
-<option value="1">
-1 Orang
-</option>
-
-<option value="2">
-2 Orang
-</option>
-
-<option value="3">
-3 Orang
-</option>
-
-<option value="4">
-4 Orang
-</option>
-
-<option value="5">
-5 Orang
-</option>
-
+<option value="1">1 Orang</option>
+<option value="2">2 Orang</option>
+<option value="3">3 Orang</option>
+<option value="4">4 Orang</option>
+<option value="5">5 Orang</option>
 </select>
-
 </div>
 
 <div class="formGroup">
-
-<label>
-Kehadiran
-</label>
-
+<label>Kehadiran</label>
 <div class="attendance">
-
 <label class="attendanceOption">
-
-<input
-type="radio"
-name="attendance"
-value="Hadir"
-checked
->
-
-<span>
-✓ Saya Akan Hadir
-</span>
-
+<input type="radio" name="attendance" value="Hadir" checked>
+<span>✓ Saya Akan Hadir</span>
 </label>
-
 <label class="attendanceOption">
-
-<input
-type="radio"
-name="attendance"
-value="Tidak Hadir"
->
-
-<span>
-✕ Tidak Dapat Hadir
-</span>
-
+<input type="radio" name="attendance" value="Tidak Hadir">
+<span>✕ Tidak Dapat Hadir</span>
 </label>
-
 </div>
-
 </div>
 
 <div class="formGroup">
-
-<label>
-Pilih Kontak Konfirmasi
-</label>
-
+<label>Pilih Kontak Konfirmasi</label>
 <div class="contactChoice">
-
-<button
-type="button"
-class="contactBtn active"
-data-contact="Hadi"
-data-number="6285143475535"
->
-
-<span>
-Hadi
-</span>
-
-<small>
-0851 4347 5535
-</small>
-
+<button type="button" class="contactBtn active" data-contact="Hadi" data-number="6285143475535">
+<span>Hadi</span>
+<small>0851 4347 5535</small>
 </button>
-
-<button
-type="button"
-class="contactBtn"
-data-contact="Riya"
-data-number="6281212000347"
->
-
-<span>
-Riya
-</span>
-
-<small>
-0812 1200 0347
-</small>
-
+<button type="button" class="contactBtn" data-contact="Riya" data-number="6281212000347">
+<span>Riya</span>
+<small>0812 1200 0347</small>
 </button>
-
+</div>
 </div>
 
-</div>
-
-<button
-type="button"
-class="submitRSVP"
-onclick="sendRSVP()"
->
+<button type="button" class="submitRSVP" onclick="sendRSVP()">
 KONFIRMASI VIA WHATSAPP
 </button>
 
@@ -2877,7 +2784,7 @@ temp.remove();
 }
 
 /* =========================================
-   RSVP
+   RSVP WHATSAPP
 ========================================= */
 
 let selectedContact = {
@@ -2981,7 +2888,7 @@ url,
 }
 
 /* =========================================
-   WISHES & GREETINGS SCRIPT
+   WISHES & GREETINGS SCRIPT (TAMPIL DI HALAMAN)
 ========================================= */
 
 function sendWish(){
